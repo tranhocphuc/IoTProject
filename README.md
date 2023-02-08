@@ -340,7 +340,6 @@ Now we have a running Notebook to (which is a bit overkill) visualize the sensor
 ![visualization img](./img/visualizationPlot.png)
 ___
 # Contribution: 
-## 1. Main task:
 | Task/Function                                                   | Responsible                         |
 | ----------------------------------------------------------------| ------------------------------------|
 | Sensor's ZigZag function                                        | Jaime Sanchez Cotta                 |
@@ -353,5 +352,4 @@ ___
 | AwS SageMaker Setup                                             | Phuc Hoc Tran                       |
 | Sensor Data Visualization (Python)                              | Phuc Hoc Tran                       |
 
-## 2. Side task: 
 
