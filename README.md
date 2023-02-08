@@ -122,7 +122,7 @@ static int sensors_read(int argc, char **argv){
 ```
 ___
 ## EC2 Instance & AwS IoT Core Setup:
-Multiple online sources provided ways to set up the EC2 instance and AwS IoT Core. One among which is this great [article]("https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot") from AwS themselves to setup Brokers on both EC2 and AwS IoT Core. 
+Multiple online sources provided ways to set up the EC2 instance and AwS IoT Core. One among which is this great [tutorial]("https://aws.amazon.com/blogs/iot/how-to-bridge-mosquitto-mqtt-broker-to-aws-iot") from AwS themselves to setup Brokers on both EC2 and AwS IoT Core. 
 
 Fortunately, although our accounts are not allowed to use IAM servce, we managed to bypass that by simply creating an EC2 instance as the tutorial instructed, and manually create an AwS IoT Core's Thing and attach policy to it. Then, follow the steps on the article above to setup the brokers.
 
