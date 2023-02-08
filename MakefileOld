@@ -1,0 +1,34 @@
+APPLICATION = emcute_mqttsn
+
+BOARD ?= native
+
+# This has to be the absolute path to the RIOT base directory:
+RIOTBASE ?= $(CURDIR)/..
+
+DEVELHELP = 1
+
+# Change this to 0 to show compiler invocation lines by default:
+QUIET ?= 1
+
+# Modules to include:
+USEMODULE += netdev_default
+USEMODULE += auto_init_gnrc_netif
+# Activate ICMPv6 error messages
+USEMODULE += gnrc_icmpv6_error
+# Specify the mandatory networking module for a IPv6 routing node
+USEMODULE += gnrc_ipv6_router_default
+# Add a routing protocol
+USEMODULE += gnrc_rpl
+USEMODULE += auto_init_gnrc_rpl
+# Additional networking modules that can be dropped if not needed
+USEMODULE += gnrc_icmpv6_echo
+USEMODULE += shell_cmd_gnrc_udp
+# Add also the shell, some shell commands
+USEMODULE += ps
+
+USEMODULE += shell
+USEMODULE += shell_cmds_default
+
+include $(RIOTBASE)/Makefile.include
+
+
